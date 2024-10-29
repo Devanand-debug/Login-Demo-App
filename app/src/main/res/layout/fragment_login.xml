@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/color_primary">
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_quote"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_accent"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/tvSignIn"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_address"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:backgroundTint="@color/color_edit_text"
+            android:drawableEnd="@drawable/ic_email"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_border"
+            app:layout_constraintTop_toBottomOf="@id/tvText"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:layout_marginTop="26dp"
+            android:padding="10dp"
+            android:backgroundTint="@color/color_edit_text"
+            android:drawableEnd="@drawable/ic_lock"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_border"
+            app:layout_constraintTop_toBottomOf="@id/etEmail"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvForgetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_accent"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/etPassword"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/color_accent"
+            app:layout_constraintTop_toBottomOf="@id/tvForgetPass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_accent"
+            android:textSize="22sp"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
